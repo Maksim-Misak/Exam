@@ -17,6 +17,7 @@ int EvenNumberCount(int[] coll)
 
 int[] NewArray(int[] coll, int evenNumber)
 {
+    if(evenNumber == 0) Console.WriteLine("В заданном массиве нет чётных элементов");
     int[] newArray = new int[evenNumber];
     int i = 0;
     while (i < newArray.Length)
