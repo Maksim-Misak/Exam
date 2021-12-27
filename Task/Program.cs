@@ -20,3 +20,21 @@ int EvenNumberCount(int[] coll)
     }
     return evenNumberCount;
 }
+
+int[] NewArray(int[] coll, int evenNumber)
+{
+    int[] newArray = new int[evenNumber];
+    int i = 0;
+    while (i < newArray.Length)
+    {
+        for (int j = 0; j < coll.Length; j++)
+        {
+            if (coll[j] % 2 == 0)
+            {
+                newArray[i] = coll[j];
+                i++;
+            }
+        }
+    }
+    return newArray;
+}
